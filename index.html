@@ -12,6 +12,176 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
+  /* =========================
+   MOBILE & TABLET
+========================= */
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  @media (max-width: 992px){
+
+    /* HERO */
+    #top > div{
+      display:flex !important;
+      flex-direction:column !important;
+      gap:40px !important;
+    }
+
+    /* ABOUT */
+    #about > div{
+      display:flex !important;
+      flex-direction:column !important;
+      gap:30px !important;
+    }
+
+    /* GIFT HEADER */
+    #gift > div > div:first-child{
+      display:flex !important;
+      flex-direction:column !important;
+      gap:20px !important;
+    }
+
+    /* GIFT CONTENT */
+    #gift > div > div:nth-child(2){
+      display:flex !important;
+      flex-direction:column !important;
+      gap:30px !important;
+    }
+
+    /* PORTFOLIO */
+    #gallery div[style*="column-count:3"]{
+      column-count:2 !important;
+    }
+  }
+
+  @media (max-width: 768px){
+
+    body{
+      overflow-x:hidden;
+    }
+
+    section{
+      overflow:hidden;
+    }
+
+    /* NAV */
+
+    header div{
+      padding:14px 18px !important;
+    }
+
+    nav{
+      width:100%;
+      justify-content:center;
+      gap:14px !important;
+    }
+
+    nav a{
+      font-size:10px !important;
+    }
+
+    /* HERO */
+
+    #top{
+      padding:40px 18px !important;
+    }
+
+    h1{
+      font-size:64px !important;
+      line-height:0.95 !important;
+    }
+
+    /* ABOUT */
+
+    #about{
+      padding:60px 18px !important;
+    }
+
+    /* WORK */
+
+    #work > div{
+      padding:60px 18px !important;
+    }
+
+    #work a{
+      grid-template-columns:40px 1fr !important;
+    }
+
+    #work a span:last-child{
+      display:none !important;
+    }
+
+    /* PORTFOLIO */
+
+    #gallery{
+      padding:60px 18px !important;
+    }
+
+    #gallery div[style*="column-count:3"]{
+      column-count:1 !important;
+    }
+
+    /* GIFT */
+
+    #gift > div{
+      padding:60px 18px !important;
+    }
+
+    /* CONTACT */
+
+    #contact > div{
+      padding:70px 18px !important;
+    }
+
+    #contact h2{
+      font-size:60px !important;
+    }
+
+    #contact div[style*="justify-content:space-between"]{
+      flex-direction:column !important;
+      align-items:flex-start !important;
+    }
+
+    /* TELEGRAM BUTTON */
+
+    a[href*="t.me"]{
+      text-align:center;
+    }
+  }
+
+  @media (max-width: 480px){
+
+    h1{
+      font-size:48px !important;
+    }
+
+    h2{
+      font-size:38px !important;
+    }
+
+    #contact h2{
+      font-size:46px !important;
+    }
+
+    p{
+      font-size:16px !important;
+    }
+
+    nav{
+      gap:10px !important;
+    }
+
+    nav a{
+      font-size:9px !important;
+    }
+
+    .mobile-center{
+      text-align:center;
+    }
+  }
   html { scroll-behavior: smooth; }
   body { margin: 0; background: #f1ece4; color: #1c1916; -webkit-font-smoothing: antialiased; }
   * { box-sizing: border-box; }
